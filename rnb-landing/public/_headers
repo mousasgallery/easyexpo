@@ -1,0 +1,6 @@
+# Προεπισκόπηση: εκτός ευρετηρίασης μέχρι τη δημόσια διάθεση.
+# Αφαιρέστε τη γραμμή X-Robots-Tag μαζί με RNB_INDEXABLE=true κατά τη δημοσίευση.
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

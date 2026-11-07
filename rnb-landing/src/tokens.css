@@ -1,0 +1,73 @@
+/*
+ * Design tokens του rnb.gr
+ *
+ * Παλέτα «Matrix Code Green» (πηγή: schemecolor.com/matrix-code-green.php).
+ * Δημοσιευμένη παλέτα, όχι επίσημο brand guide τρίτου.
+ * ΜΗΝ αντικαθιστάτε αποχρώσεις. Νέα χρώματα μπαίνουν μόνο εδώ, με αιτιολόγηση.
+ */
+:root {
+  color-scheme: dark;
+  /* — Παλέτα — */
+  --c-near-black: #0D0208;   /* Βασικό φόντο */
+  --c-deep-green: #003B00;   /* Σκούρες επιφάνειες, διακοσμητικό βάθος. Όχι για μικρό κείμενο */
+  --c-mid-green: #008F11;    /* Δευτερεύουσες γραμμές, ψηφιακοί χαρακτήρες. Όχι για μικρό κείμενο */
+  --c-bright-green: #00FF41; /* Κύρια κουμπιά, ενεργά στοιχεία, focus, επιλεγμένες λεπτομέρειες */
+
+  /* — Ουδέτερα (μόνο για αναγνωσιμότητα) — */
+  --c-black: #000000;        /* Βαθύτερα φόντα, κείμενο πάνω σε φωτεινό πράσινο */
+  --c-text: #F2FFF5;         /* Κύριο κείμενο */
+  --c-text-muted: #B7C9BC;   /* Δευτερεύον κείμενο */
+
+  /* — Ταυτότητα rnb: δύο κουκκίδες του wordmark (διακοσμητικές, όχι κείμενο) —
+     ΕΚΚΡΕΜΕΙ επιβεβαίωση των επίσημων HEX από τον οδηγό ταυτότητας rnb. */
+  --rnb-dot-red: #E63946;
+  --rnb-dot-blue: #2F7DF6;
+
+  /* — Σημασιολογικοί ρόλοι — */
+  --bg: var(--c-near-black);
+  --bg-deep: var(--c-black);
+  --surface: var(--c-black);
+  --surface-strong: var(--c-deep-green);
+  --line: var(--c-deep-green);
+  --line-strong: var(--c-mid-green);
+  --text: var(--c-text);
+  --text-muted: var(--c-text-muted);
+  --accent: var(--c-bright-green);
+  --on-accent: var(--c-black);
+  --focus: var(--c-bright-green);
+  --rain-glyph: var(--c-mid-green);
+  --rain-head: var(--c-bright-green);
+
+  /* Διακριτική λάμψη: πάντα από το φωτεινό πράσινο με χαμηλή αδιαφάνεια */
+  --glow-sm: 0 0 12px rgb(0 255 65 / 0.25);
+  --glow-md: 0 0 28px rgb(0 255 65 / 0.18);
+  --glow-text: 0 0 24px rgb(0 255 65 / 0.22);
+
+  /* — Τυπογραφία — */
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace; /* μόνο διακοσμητικός κώδικας */
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1.0625rem;
+  --fs-lg: clamp(1.125rem, 1rem + 0.5vw, 1.3125rem);
+  --fs-h3: clamp(1.1875rem, 1.05rem + 0.5vw, 1.375rem);
+  --fs-h2: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  --fs-h1: clamp(2.125rem, 1.2rem + 4.2vw, 4.25rem);
+
+  /* — Χώρος & σχήμα — */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: clamp(4rem, 3rem + 4vw, 7rem);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --container: 1160px;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --header-h: 64px;
+}
