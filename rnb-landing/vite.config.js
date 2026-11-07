@@ -56,7 +56,7 @@ function driveCopy() {
       const docs = fs.readFileSync('drive/docs-section.html', 'utf8').replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : m));
       const fonts = '<link rel="preconnect" href="https://fonts.googleapis.com" />\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;display=swap" />\n';
       return html
-        .replace('<link rel="icon" href="/favicon.svg" type="image/svg+xml" />', fonts)
+        .replace(/<link rel="icon"[^>]*>\s*/, fonts)
         .replace('</footer>', '</footer>\n' + docs);
     },
   };
