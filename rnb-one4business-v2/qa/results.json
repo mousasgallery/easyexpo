@@ -1,0 +1,848 @@
+[
+  {
+    "area": "Responsive",
+    "name": "360×800: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "expected": "scrollWidth ≤ viewport, κανένα στοιχείο εκτός",
+    "actual": "scrollWidth 360 / viewport 360",
+    "evidence": "360-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 360×800"
+  },
+  {
+    "area": "Responsive",
+    "name": "360×800: στόχοι αφής ≥ 44×44",
+    "status": "PASS",
+    "expected": "κάθε control ≥ 44×44 px",
+    "actual": "όλα ≥ 44×44",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 360×800"
+  },
+  {
+    "area": "Responsive",
+    "name": "390×844: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "expected": "scrollWidth ≤ viewport, κανένα στοιχείο εκτός",
+    "actual": "scrollWidth 390 / viewport 390",
+    "evidence": "390-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Responsive",
+    "name": "390×844: στόχοι αφής ≥ 44×44",
+    "status": "PASS",
+    "expected": "κάθε control ≥ 44×44 px",
+    "actual": "όλα ≥ 44×44",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Responsive",
+    "name": "768×1024: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "expected": "scrollWidth ≤ viewport, κανένα στοιχείο εκτός",
+    "actual": "scrollWidth 768 / viewport 768",
+    "evidence": "768-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 768×1024"
+  },
+  {
+    "area": "Responsive",
+    "name": "768×1024: στόχοι αφής ≥ 44×44",
+    "status": "PASS",
+    "expected": "κάθε control ≥ 44×44 px",
+    "actual": "όλα ≥ 44×44",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 768×1024"
+  },
+  {
+    "area": "Responsive",
+    "name": "1440×900: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "expected": "scrollWidth ≤ viewport, κανένα στοιχείο εκτός",
+    "actual": "scrollWidth 1440 / viewport 1440",
+    "evidence": "1440-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Responsive",
+    "name": "1440×900: στόχοι αφής ≥ 44×44",
+    "status": "PASS",
+    "expected": "κάθε control ≥ 44×44 px",
+    "actual": "όλα ≥ 44×44",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Δομή",
+    "name": "Ένα route, πέντε κύριες ενότητες",
+    "status": "PASS",
+    "expected": "#top #uses #example #control #access",
+    "actual": "top uses example control access",
+    "evidence": "main > section: 5",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Δομή",
+    "name": "Σύνδεσμοι μόνο προς anchors και APP_URL, χωρίς φόρμες",
+    "status": "PASS",
+    "expected": "κανένα άλλο route, 0 φόρμες",
+    "actual": "20 links, άλλα: 0, φόρμες: 0",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "SEO",
+    "name": "Μία H1 με ακριβές κείμενο, lang=\"el\"",
+    "status": "PASS",
+    "expected": "μία H1 του brief",
+    "actual": "1 H1 · «Λιγότερες εκκρεμότητες. Περισσότερος χρόνος για την επιχείρησή σου.» · lang=el",
+    "evidence": "ιεραρχία 12333323323333332",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "SEO",
+    "name": "noindex/nofollow, χωρίς canonical/og:url, σχετικό og:image",
+    "status": "PASS",
+    "expected": "noindex, nofollow· όχι επινοημένα απόλυτα URLs",
+    "actual": "robots=\"noindex, nofollow, noarchive\" canonical=false og:url=false og:image=/og-image.png",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "SEO",
+    "name": "Social preview 1200×630, favicon, robots Disallow",
+    "status": "PASS",
+    "expected": "αρχεία διαθέσιμα",
+    "actual": "og-image 200 · favicon 200 · robots Disallow /",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Claims",
+    "name": "Χωρίς τιμές, αριθμητικούς ισχυρισμούς, πιστοποιήσεις, παλιά παραδείγματα",
+    "status": "PASS",
+    "expected": "κανένα απαγορευμένο μοτίβο",
+    "actual": "κανένα εύρημα",
+    "evidence": "innerText",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αφήγηση",
+    "name": "Γραμμές NEO, ρόλοι Peitho/Morpheus/Trinity, σήμανση γραμματείας",
+    "status": "PASS",
+    "expected": "13 συμφωνημένες φράσεις ακριβώς",
+    "actual": "13/13 παρούσες",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "FAQ",
+    "name": "Έξι συμφωνημένες ερωτήσεις",
+    "status": "PASS",
+    "expected": "6 ερωτήσεις του brief",
+    "actual": "Τι είναι το ONE4Business; | Πώς συνεργάζονται οι διαφορετικοί ρόλοι; | Γιατί επικοινωνώ με την Trinity; | Στέλνει κάτι αυτή η επίδειξη; | Είναι διαθέσιμη η AI τηλεφωνική γραμματεία; | Ποιες συνδέσεις υποστηρίζονται σήμερα;",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Design v0.1.0: δεξιά, σκοτεινό πλαίσιο, bar, πράσινη μονοδιάστατη γραφή, λάμψη",
+    "status": "PASS",
+    "expected": "όπως v0.1.0",
+    "actual": "{\"title\":\"NEO · ONE4Business\",\"dots\":3,\"bg\":\"rgb(0, 0, 0)\",\"border\":\"rgb(0, 143, 17)\",\"right\":true,\"color\":\"rgb(0, 255, 65)\",\"font\":\"\\\"JetBrains Mono\\\"\",\"glow\":true}",
+    "evidence": "1440-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Τίτλος «NEO · ONE4Business»",
+    "status": "PASS",
+    "expected": "NEO · ONE4Business",
+    "actual": "NEO · ONE4Business",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Ένας χαρακτήρας κάθε φορά (~45 ms)",
+    "status": "PASS",
+    "expected": "βήματα ενός χαρακτήρα, ~45 ms/χαρ.",
+    "actual": "μέγιστο βήμα 1 χαρ. ανά 20 ms δείγμα · μέσος ρυθμός 45.9 ms/χαρ.",
+    "evidence": "40 δείγματα",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Cursor ακριβώς μετά τον τελευταίο χαρακτήρα",
+    "status": "PASS",
+    "expected": "cursor.previousSibling = τελευταίος ορατός χαρακτήρας",
+    "actual": "40/40 δείγματα",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Παύση offscreen και συνέχεια από το ίδιο σημείο",
+    "status": "PASS",
+    "expected": "σταθερό offscreen, συνέχεια μετά",
+    "actual": "offscreen 29→29 (offscreen) · επιστροφή 46",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Παύση σε κρυφή καρτέλα",
+    "status": "PASS",
+    "expected": "καμία πρόοδος όσο είναι κρυφή",
+    "actual": "visibilitychange (προσομοίωση document.hidden): 46→46 (hidden-tab)",
+    "evidence": "visibilityState μετά από bringToFront άλλης καρτέλας: visible",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Τρία hooks ακριβώς, οι προηγούμενες φράσεις παραμένουν",
+    "status": "PASS",
+    "expected": "τα τρία hooks του brief",
+    "actual": "«Μια ομάδα AI. Πολλές ειδικότητες. Ένα σύστημα.» «Λιγότερος χρόνος στις επαναλαμβανόμενες δουλειές. Περισσότερη οργάνωση στην επιχείρησή σου.» «Μίλα στην Trinity. Γνώρισε τι μπορεί να αναλάβει η ομάδα.»",
+    "evidence": "Intl.Segmenter graphemes",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Χωρίς layout shift κατά την πληκτρολόγηση",
+    "status": "PASS",
+    "expected": "ίδιο ύψος/θέση πριν και μετά",
+    "actual": "ύψος 382.421875→382.421875, y 320.53125→320.53125",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Μία εκτέλεση, χωρίς διαγραφή/επανάληψη, χωρίς blinking μετά το τέλος",
+    "status": "PASS",
+    "expected": "παραμένει ολοκληρωμένο, cursor σταθερός",
+    "actual": "done=true 194/194 · animation=none · «Εμφάνιση όλου» κρυμμένο=true",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Screen readers: πλήρες κείμενο μία φορά, χωρίς aria-live",
+    "status": "PASS",
+    "expected": "οπτικό aria-hidden, sr-only αντίγραφο, 0 aria-live",
+    "actual": "aria-hidden=true · sr 3 φράσεις · aria-live 0",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "«Εμφάνιση όλου» ολοκληρώνει αμέσως (πληκτρολόγιο)",
+    "status": "PASS",
+    "expected": "πλήρες κείμενο αμέσως, η εστίαση δεν χάνεται",
+    "actual": "done=true 194/194 · εστίαση στο terminal=true",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Terminal",
+    "name": "Reduced motion: όλο το κείμενο αμέσως, χωρίς blinking",
+    "status": "PASS",
+    "expected": "πλήρες, στατικό",
+    "actual": "done=true · animation=none",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900 · reduced motion (emulated)"
+  },
+  {
+    "area": "Terminal",
+    "name": "Χωρίς JavaScript: όλο το κείμενο",
+    "status": "PASS",
+    "expected": "τρία hooks ορατά",
+    "actual": "3 hooks, visibility=visible",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900 · χωρίς JS"
+  },
+  {
+    "area": "Fallbacks",
+    "name": "Χωρίς JavaScript: κατανοητή στατική σελίδα (cinema χωρίς pinned κενό)",
+    "status": "PASS",
+    "expected": "στατική σκηνή",
+    "actual": "ύψος cinema 640px, λεζάντες ορατές",
+    "evidence": "nojs-1440.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900 · χωρίς JS"
+  },
+  {
+    "area": "Terminal",
+    "name": "Κινητό 360: φυσική αναδίπλωση, όχι οριζόντια κύλιση, γραμματοσειρά ≥ 15px",
+    "status": "PASS",
+    "expected": "wrap, ≥15px",
+    "actual": "font 16px · scroll 289/289 · white-space normal",
+    "evidence": "360-hero-typed.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 360×800"
+  },
+  {
+    "area": "Terminal",
+    "name": "Αξιολόγηση μηχανισμού v1.0.0 για επαναχρησιμοποίηση",
+    "status": "PASS",
+    "expected": "πραγματική δοκιμή και απόφαση",
+    "actual": "scroll-linked, όχι χρονικός: στην αρχή «0ch|0ch|0ch|0ch|0ch», στο 60% «none|none|7ch|0ch|0ch», χωρίς scroll μετά 1,5 s «none|none|7ch|0ch|0ch». Κόβει με max-width σε ch (υποθέτει μονοδιάστατη γραμμή χωρίς αναδίπλωση). Δεν επαναχρησιμοποιήθηκε· νέος μηχανισμός ανά grapheme.",
+    "evidence": "v1.0.0 στο localhost:4174",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · v1.0.0"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #uses: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "expected": "top > ύψος header",
+    "actual": "top 313px",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #example: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "expected": "top > ύψος header",
+    "actual": "top 312px",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #control: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "expected": "top > ύψος header",
+    "actual": "top 316px",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Hero CTA «Δες πώς λειτουργεί» → #example",
+    "status": "PASS",
+    "expected": "#example",
+    "actual": "#example",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Πληκτρολόγιο",
+    "name": "Skip link πρώτο, ορατό focus σε κάθε στάση",
+    "status": "PASS",
+    "expected": "outline ≥ 2px #00FF41",
+    "actual": "Μετάβαση στο περιεχόμενο → RNB ONE4Business, αρχή σ → Ειδικότητες → Παράδειγμα → Έλεγχος → Πρόσβαση στην εφαρμογή → Δες πώς λειτουργεί → Εμφάνιση όλου → Παράλειψη ιστορίας",
+    "evidence": "focus-1440.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "FAQ",
+    "name": "Άνοιγμα με πληκτρολόγιο",
+    "status": "PASS",
+    "expected": "details ανοίγει με Enter",
+    "actual": "open=true",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Απευθείας φόρτωση /#example και refresh",
+    "status": "PASS",
+    "expected": "ενότητα στην οθόνη",
+    "actual": "top 188 → μετά το refresh 188",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Απευθείας φόρτωση /#access και refresh",
+    "status": "PASS",
+    "expected": "ενότητα στην οθόνη",
+    "actual": "top 315 → μετά το refresh 315",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile menu: εστίαση μέσα, Tab παγιδευμένο, Escape κλείνει και επιστρέφει εστίαση",
+    "status": "PASS",
+    "expected": "όλα αληθή",
+    "actual": "μέσα=true trap=true επιστροφή=true",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile menu: κλείνει μετά την επιλογή και πάει στην ενότητα",
+    "status": "PASS",
+    "expected": "κλειστό, ενότητα κάτω από header",
+    "actual": "top 158px",
+    "evidence": "390-menu.png",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Demo",
+    "name": "Τέσσερα βήματα, «Βήμα Χ από 4», προηγούμενο/επόμενο",
+    "status": "PASS",
+    "expected": "ένδειξη βήματος",
+    "actual": "Βήμα 2 από 4 · Βήμα 4 από 4",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Φανταστικά δεδομένα: γνωστά, ελλείψεις, κόστος/χρόνος",
+    "status": "PASS",
+    "expected": "όπως το brief",
+    "actual": "Επισκευή τεσσάρων καρεκλών, Αίτημα εκτίμησης | Φωτογραφίες, Περιγραφή ζημιάς, Περιοχή παραλαβής",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Η αλλαγή βήματος διατηρεί το κείμενο",
+    "status": "PASS",
+    "expected": "ίδιο κείμενο σε βήμα 3 και 4",
+    "actual": "βήμα 3: «Αλλαγμένο προσχέδιο δοκιμής.»",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Κενό/whitespace κείμενο δεν εγκρίνεται (έλεγχος στον handler)",
+    "status": "PASS",
+    "expected": "μη εγκεκριμένο + μήνυμα",
+    "actual": "approved=false · «Το κείμενο είναι κενό. Γράψε το προσχέδιο πριν από την έγκριση.»",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Έγκριση κενού και με απευθείας κλήση handler",
+    "status": "PASS",
+    "expected": "απορρίπτεται",
+    "actual": "απορρίφθηκε",
+    "evidence": "click() χωρίς input event",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Έγκριση: ακριβές μήνυμα, διπλό click = μία ενέργεια",
+    "status": "PASS",
+    "expected": "«Εγκρίθηκε μόνο μέσα στο παράδειγμα…» · approvals=1",
+    "actual": "«Εγκρίθηκε μόνο μέσα στο παράδειγμα. Κανένα μήνυμα δεν στάλθηκε.» · approvals=1",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "HTML-like input αποδίδεται ως απλό κείμενο",
+    "status": "PASS",
+    "expected": "0 στοιχεία HTML, καμία εκτέλεση",
+    "actual": "elements=0 · εκτέλεση=0 · «Κείμενο <img src=x onerror=\"window.__xss…»",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Νέα αλλαγή ακυρώνει την έγκριση",
+    "status": "PASS",
+    "expected": "«Το προσχέδιο άλλαξε. Χρειάζεται νέος έλεγχος.»",
+    "actual": "approved=false · «Το προσχέδιο άλλαξε. Χρειάζεται νέος έλεγχος.» · #control: «Χρειάζεται νέος έλεγχος»",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Επαναφορά: αρχικό κείμενο, βήμα 1, μη εγκεκριμένο",
+    "status": "PASS",
+    "expected": "αρχική κατάσταση",
+    "actual": "step=0 approved=false κείμενο αρχικό=true",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Demo",
+    "name": "Refresh επαναφέρει την αρχική κατάσταση",
+    "status": "PASS",
+    "expected": "αρχικό κείμενο",
+    "actual": "αρχικό=true step=0",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Ιδιωτικότητα",
+    "name": "Network: κανένα demo περιεχόμενο δεν αποστέλλεται, 0 localStorage/cookies",
+    "status": "PASS",
+    "expected": "0 εξερχόμενα αιτήματα με δεδομένα",
+    "actual": "αιτήματα κατά το demo: 7 (μόνο φόρτωση σελίδας στο refresh) · εξωτερικά/με δεδομένα: 0 · localStorage 0 · cookies «»",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Media",
+    "name": "desktop: lazy και μόνο η κατάλληλη πηγή",
+    "status": "PASS",
+    "expected": "πριν την ενότητα 0 αιτήματα, μετά μόνο desktop",
+    "actual": "πριν: 0 · media: cinema-desktop-start.webp, cinema-desktop.mp4",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Media",
+    "name": "desktop: scroll εμπρός και πίσω (reverse) ακολουθεί το video",
+    "status": "PASS",
+    "expected": "αύξουσα/φθίνουσα currentTime",
+    "actual": "currentTime 0.89 → 2.68 → 5.07 → 2.72 → 0.91",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Media",
+    "name": "desktop: παύση rendering όταν η σκηνή είναι offscreen",
+    "status": "PASS",
+    "expected": "κανένα rAF",
+    "actual": "raf=false",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Media",
+    "name": "mobile: lazy και μόνο η κατάλληλη πηγή",
+    "status": "PASS",
+    "expected": "πριν την ενότητα 0 αιτήματα, μετά μόνο mobile",
+    "actual": "πριν: 0 · media: cinema-mobile-start.webp, cinema-mobile.mp4",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Media",
+    "name": "mobile: scroll εμπρός και πίσω (reverse) ακολουθεί το video",
+    "status": "PASS",
+    "expected": "αύξουσα/φθίνουσα currentTime",
+    "actual": "currentTime 0.88 → 2.67 → 5.09 → 2.7 → 0.93",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Media",
+    "name": "mobile: παύση rendering όταν η σκηνή είναι offscreen",
+    "status": "PASS",
+    "expected": "κανένα rAF",
+    "actual": "raf=false",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 390×844"
+  },
+  {
+    "area": "Media",
+    "name": "Resize desktop → mobile: απελευθέρωση και φόρτωση της σωστής πηγής",
+    "status": "PASS",
+    "expected": "cinema-mobile.mp4",
+    "actual": "src=cinema-mobile.mp4 · ready-mobile · αιτήματα cinema-desktop-start.webp, cinema-desktop.mp4, cinema-mobile-start.webp, cinema-mobile.mp4",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Responsive",
+    "name": "Επανέλεγχος desktop μετά το resize",
+    "status": "PASS",
+    "expected": "χωρίς overflow",
+    "actual": "scrollWidth 1440",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Fallbacks",
+    "name": "Αποτυχία video → poster και προσβάσιμη ενημέρωση",
+    "status": "PASS",
+    "expected": "failed + poster",
+    "actual": "failed · poster cinema-desktop-start.webp · «Το βίντεο δεν φορτώθηκε. Εμφανίζεται στατική εικόνα.»",
+    "evidence": "route abort *.mp4",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Fallbacks",
+    "name": "Αποτυχία video και poster → συμπαγές φόντο, αναγνώσιμες λεζάντες",
+    "status": "PASS",
+    "expected": "φόντο #000",
+    "actual": "φόντο rgb(0, 0, 0) · λεζάντα rgb(242, 255, 245)",
+    "evidence": "route abort *.mp4 + *.webp",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Reduced motion",
+    "name": "Cinema στατική: τελική εικόνα, καμία λήψη video, χωρίς pinned κενό, χωρίς smooth scroll",
+    "status": "PASS",
+    "expected": "static, 0 mp4",
+    "actual": "poster cinema-desktop-end.webp · mp4 αιτήματα 0 · ύψος 640=640 · scroll-behavior auto",
+    "evidence": "emulated prefers-reduced-motion",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900 · reduced motion (emulated)"
+  },
+  {
+    "area": "Lifecycle",
+    "name": "Back: η σελίδα φορτώνει ξανά σωστά",
+    "status": "PASS",
+    "expected": "λειτουργική επαναφόρτωση",
+    "actual": "νέα φόρτωση · typing 4/194",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Lifecycle",
+    "name": "Επαναφορά από bfcache (pageshow persisted)",
+    "status": "NOT RUN",
+    "expected": "restore από bfcache",
+    "actual": "ο headless Chromium έκανε νέα φόρτωση αντί για restore· ο κώδικας pagehide/pageshow δεν ασκήθηκε σε πραγματικό restore",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Περιγραφή hero: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "20px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Eyebrow: #00ff41 σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "14.94:1",
+    "evidence": "16px/650",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Ένδειξη ανάπτυξης: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "15px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "CTA: #000000 σε #00ff41",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "15.38:1",
+    "evidence": "17px/650",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Terminal: #00ff41 σε #000000",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "15.38:1",
+    "evidence": "17px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Terminal bar: #b7c9bc σε #000000",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "12.09:1",
+    "evidence": "12px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Ρόλος (περιοχή): #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "18px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Παράδειγμα ρόλου: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "18px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Σήμανση σχεδιαζόμενης: #f2fff5 σε #003b00",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "12.55:1",
+    "evidence": "14px/650",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Ένδειξη παραδείγματος: #f2fff5 σε #000000",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "20.40:1",
+    "evidence": "14px/650",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Demo υπότιτλος: #b7c9bc σε #003b00",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "7.44:1",
+    "evidence": "14px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Ετικέτα προσχεδίου: #000000 σε #00ff41",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "15.38:1",
+    "evidence": "14px/700",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Βοήθεια textarea: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "15px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "FAQ: #f2fff5 σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "19.82:1",
+    "evidence": "18px/650",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Footer: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "11.75:1",
+    "evidence": "14px/400",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "NEO tag: #00ff41 σε #0d0208",
+    "status": "PASS",
+    "expected": "≥ 4.5:1",
+    "actual": "14.94:1",
+    "evidence": "13px/700",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αντίθεση",
+    "name": "Focus ring #00FF41 σε #0D0208 / #000 / #003B00",
+    "status": "PASS",
+    "expected": "≥ 3:1",
+    "actual": "14.94 / 15.38 / 9.46",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Αναγνωσιμότητα",
+    "name": "Λεζάντες cinema σε όλα τα στάδια κίνησης (χειρότερο pixel πίσω από το κείμενο)",
+    "status": "PASS",
+    "expected": "≥ 4.5:1 για #B7C9BC",
+    "actual": "12.09 / 12.09 / 12.09 / 12.09",
+    "evidence": "progress 5% / 35% / 62% / 95%",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 1440×900"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Zoom 200% (1440×900 → 720×450 CSS px): χωρίς overflow",
+    "status": "PASS",
+    "expected": "χωρίς οριζόντια κύλιση",
+    "actual": "scrollWidth 720",
+    "evidence": "προσομοίωση με ισοδύναμο viewport",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 720×450"
+  },
+  {
+    "area": "Login",
+    "name": "APP_URL: πραγματικός προορισμός και οθόνη χωρίς authentication",
+    "status": "PASS",
+    "expected": "οθόνη σύνδεσης RNB",
+    "actual": "https://rnb-alpha.lovable.app/login → https://rnb.gr/login · 200 · «Σύνδεση · rnb» · inputs: email",
+    "evidence": "δεν έγινε login",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2 · 2026-11-07T23:01:08.100Z"
+  },
+  {
+    "area": "Γενικά",
+    "name": "Console errors",
+    "status": "PASS",
+    "expected": "0",
+    "actual": "0 σφάλματα",
+    "evidence": "όλες οι παραπάνω σελίδες",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2"
+  },
+  {
+    "area": "Γενικά",
+    "name": "Missing assets (HTTP ≥ 400)",
+    "status": "PASS",
+    "expected": "0",
+    "actual": "0 (εξαιρούνται οι σκόπιμες αποτυχίες media)",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2"
+  },
+  {
+    "area": "Συσκευές",
+    "name": "Φυσικά iPhone/Android, Safari, Firefox",
+    "status": "NOT RUN",
+    "expected": "δοκιμή σε φυσικές συσκευές",
+    "actual": "δεν υπάρχουν σε αυτό το περιβάλλον· μόνο Chromium",
+    "evidence": "",
+    "env": "Chromium 153.0.8010.12 (Playwright headless) · commit 4f3bfb2"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "LCP (εργαστήριο, κινητό)",
+    "status": "PASS",
+    "expected": "≤ 2,5 s",
+    "actual": "1.48 s (στοιχείο: H1)",
+    "evidence": "qa/lighthouse/mobile-devtools.json",
+    "env": "Lighthouse 12.6.0 · HeadlessChrome/153.0.0.0 · mobile 412×823 DPR 1.75 · devtools throttling CPU ×4, 1475 kbps, RTT 150 ms · localhost · commit 4f3bfb2"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "CLS (εργαστήριο, κινητό)",
+    "status": "PASS",
+    "expected": "≤ 0,1",
+    "actual": "0.018",
+    "evidence": "qa/lighthouse/mobile-devtools.json",
+    "env": "Lighthouse 12.6.0 · HeadlessChrome/153.0.0.0 · mobile 412×823 DPR 1.75 · devtools throttling CPU ×4, 1475 kbps, RTT 150 ms · localhost · commit 4f3bfb2"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "TBT (εργαστήριο, κινητό)",
+    "status": "PASS",
+    "expected": "≤ 200 ms",
+    "actual": "51 ms",
+    "evidence": "qa/lighthouse/mobile-devtools.json",
+    "env": "Lighthouse 12.6.0 · HeadlessChrome/153.0.0.0 · mobile 412×823 DPR 1.75 · devtools throttling CPU ×4, 1475 kbps, RTT 150 ms · localhost · commit 4f3bfb2"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "Αρχική μεταφορά και media requests στη φόρτωση",
+    "status": "PASS",
+    "expected": "καμία λήψη media πριν την ενότητα",
+    "actual": "8 αιτήματα · 112.0 KB · media: 0",
+    "evidence": "network-requests",
+    "env": "Lighthouse 12.6.0 · HeadlessChrome/153.0.0.0 · mobile 412×823 DPR 1.75 · devtools throttling CPU ×4, 1475 kbps, RTT 150 ms · localhost · commit 4f3bfb2"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "Media στο #example (κινητό, throttling)",
+    "status": "PASS",
+    "expected": "μόνο mobile video + poster",
+    "actual": "cinema-mobile-start.webp 6 KB · cinema-mobile.mp4 396 KB",
+    "evidence": "CDP Network",
+    "env": "Chromium 153.0.8010.12 · 412×823 isMobile · CDP: CPU ×4, 1,47 Mbps, latency 150 ms · commit 4f3bfb2"
+  }
+]

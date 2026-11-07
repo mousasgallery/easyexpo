@@ -73,7 +73,7 @@ body::before { content: ''; position: fixed; inset: 0 0 auto; height: env(safe-a
 .terminal-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--line); font-family: var(--font-mono); font-size: .75rem; color: var(--c-text-2); }
 .terminal-bar i { width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--line-2); }
 .terminal-bar span { margin-left: auto; }
-.terminal-body { position: relative; padding: 1.5rem 1.5rem 1.4rem; }
+.terminal-body { position: relative; padding: 1.5rem 1.5rem calc(1.4rem + 44px + .5rem); }
 .terminal-lines { display: grid; gap: 1.05rem; font-family: var(--font-mono); font-size: clamp(.9375rem, .86rem + .25vw, 1.0625rem); line-height: 1.75; color: var(--c-accent); text-shadow: 0 0 8px rgb(0 255 65 / .4); }
 .hook { min-height: 1.75em; overflow-wrap: break-word; }
 .terminal.is-typing .ch { visibility: hidden; }
@@ -82,7 +82,7 @@ body::before { content: ''; position: fixed; inset: 0 0 auto; height: env(safe-a
 .terminal.is-typing .cursor { animation: blink 1s steps(1) infinite; }
 .terminal.is-done .cursor, .terminal.is-reduced .cursor { animation: none; }
 @keyframes blink { 50% { opacity: 0; } }
-.terminal-skip { display: block; margin: 1rem 0 0 auto; min-height: 44px; padding: 0 .9rem; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--c-text-2); font-family: var(--font-sans); font-size: .875rem; cursor: pointer; }
+.terminal-skip { position: absolute; right: 1.1rem; bottom: 1rem; display: block; min-height: 44px; padding: 0 .9rem; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--c-text-2); font-family: var(--font-sans); font-size: .875rem; cursor: pointer; }
 .terminal-skip:hover { color: var(--c-text); border-color: var(--line-2); }
 
 @media (max-width: 900px) {
@@ -92,7 +92,7 @@ body::before { content: ''; position: fixed; inset: 0 0 auto; height: env(safe-a
 @media (max-width: 560px) {
   .hero h1 { max-width: none; }
   .hero-actions .btn { width: 100%; }
-  .terminal-body { padding: 1.15rem 1.1rem 1rem; }
+  .terminal-body { padding: 1.15rem 1.1rem calc(1rem + 44px + .5rem); }
   .terminal-lines { font-size: 1rem; gap: .9rem; }
 }
 
@@ -221,6 +221,7 @@ html:not(.js) .cinema-stage { background: var(--c-stage) url('/media/cinema-desk
 .controls p { color: var(--c-text-2); }
 .live-status { margin-top: var(--s5); color: var(--c-text-2); }
 .live-status strong { color: var(--c-text); }
+.live-status a { display: inline-flex; align-items: center; min-height: 44px; color: var(--c-accent); }
 .faq-title { font-size: var(--fs-h3); margin-bottom: var(--s4); }
 .faq { border-top: 0; }
 .faq details { border-bottom: 1px solid var(--line); }

@@ -15,7 +15,12 @@ initTerminal(document.querySelector('[data-terminal]'), TYPING, reducedMotion);
 initCinema(document.querySelector('[data-cinema]'), config.MEDIA, reducedMotion);
 initDemo(document.querySelector('[data-demo]'));
 
+// Άμεση φόρτωση με hash (/#example κ.λπ.): σωστή θέση αφού σταθεροποιηθεί η διάταξη (γραμματοσειρές).
 if (location.hash.length > 1) {
   const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  if (el) requestAnimationFrame(() => el.scrollIntoView({ block: 'start' }));
+  if (el) {
+    const go = () => el.scrollIntoView({ block: 'start', behavior: 'instant' });
+    go();
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => requestAnimationFrame(go));
+  }
 }
