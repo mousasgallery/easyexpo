@@ -252,7 +252,7 @@
   {
     "name": "Reduced motion: στατική βροχή (ίδιο καρέ, χωρίς loop)",
     "ok": true,
-    "detail": "bytes=51398"
+    "detail": "bytes=42946"
   },
   {
     "name": "Reduced motion: χωρίς κινούμενο cursor",
@@ -372,17 +372,17 @@
   {
     "name": "390px: .hero h1 πάνω από βροχή (χειρότερο pixel)",
     "ok": true,
-    "detail": "13.97:1 σε rgb(12,17,11)"
+    "detail": "14.13:1 σε rgb(12,15,11)"
   },
   {
     "name": "1440px: .lead πάνω από βροχή (χειρότερο pixel)",
     "ok": true,
-    "detail": "11.52:1 σε rgb(12,7,9)"
+    "detail": "11.60:1 σε rgb(13,5,8)"
   },
   {
     "name": "1440px: .hero h1 πάνω από βροχή (χειρότερο pixel)",
     "ok": true,
-    "detail": "14.13:1 σε rgb(12,15,11)"
+    "detail": "13.82:1 σε rgb(11,19,12)"
   },
   {
     "name": "iPhone 13: χωρίς υπερχείλιση",

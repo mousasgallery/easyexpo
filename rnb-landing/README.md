@@ -41,6 +41,22 @@ npm run build:single # ένα αυτόνομο HTML (dist-single/) για ιδι
 
 Τα `qa` και `og` χρησιμοποιούν Playwright/Chromium (`require('playwright')`). Σε μηχάνημα χωρίς Playwright: `npm i -D playwright && npx playwright install chromium`.
 
+## Φιλοξενία: Cloudflare Pages (αρχική επιλογή)
+
+Δεν έχει γίνει ακόμη deploy. Όταν εγκριθεί το preview:
+
+1. Cloudflare → Workers & Pages → Create → Pages → σύνδεση με το repo `mousasgallery/easyexpo`.
+2. Root directory: `rnb-landing` · Build command: `npm run build` · Output: `dist`.
+3. Environment variables (Production): `RNB_APP_URL`, `RNB_SITE_URL` όπως χρειάζεται. Το `RNB_INDEXABLE` μένει κενό μέχρι τη δημόσια διάθεση.
+4. Το `public/_headers` εφαρμόζεται αυτόματα από το Cloudflare Pages (noindex header).
+5. Custom domain `rnb.gr` μόνο μετά τον τελικό έλεγχο.
+
+Εναλλακτικά από τερματικό, με το `wrangler.toml` του project:
+
+```bash
+npm run build && npx wrangler pages deploy dist
+```
+
 ## Δομή
 
 ```
@@ -74,7 +90,7 @@ qa/screenshots/        screenshots & αποτελέσματα του τελευ�
 
 ## Περιεχόμενο και ακρίβεια
 
-- Δεν υπάρχουν τιμές, πελάτες, αξιολογήσεις, ποσοστά ή πιστοποιήσεις.
+- Τιμή στο FAQ: «50 € τον μήνα για κάθε agent, συν ΦΠΑ» (απόφαση 07/11/2026). Δεν υπάρχουν πελάτες, αξιολογήσεις, ποσοστά ή πιστοποιήσεις.
 - Δεν αναφέρονται συνδέσεις, αυτόματες αποστολές ή εφαρμογές συσκευών.
 - Οι πρακτικές χρήσεις σημειώνονται ως «Ενδεικτικό σενάριο».
 - Το παράδειγμα έχει την ένδειξη «Ενδεικτικό παράδειγμα — δεν εκτελεί πραγματικές εργασίες». Χρησιμοποιεί φανταστική επιχείρηση. Δεν κάνει κλήσεις δικτύου.

@@ -1,0 +1,4 @@
+# Cloudflare Pages: στατική landing page rnb.gr (χωριστή από την εφαρμογή app.rnb.gr)
+name = "rnb-landing"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
