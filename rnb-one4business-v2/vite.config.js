@@ -12,6 +12,7 @@ function siteHtml(mode) {
   const c = siteConfig;
   const publicConfig = { APP_URL: c.APP_URL, SITE_MODE: c.SITE_MODE, ENABLE_ANALYTICS: c.ENABLE_ANALYTICS, MEDIA: c.MEDIA };
   if (mode === 'drive') publicConfig.MEDIA = null; // το αντίγραφο Drive δεν έχει τα αρχεία video δίπλα του
+  if (mode === 'single') publicConfig.MEDIA = JSON.parse(JSON.stringify(c.MEDIA).replaceAll('"/media/', '"media/')); // σχετικά paths για ιδιωτικό preview
   const li = (arr) => arr.map((x) => `<li>${esc(x)}</li>`).join('');
   return {
     name: 'rnb-site-html',
