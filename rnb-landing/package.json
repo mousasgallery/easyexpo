@@ -10,7 +10,8 @@
     "build:single": "vite build --mode single",
     "preview": "vite preview --port 4173 --strictPort",
     "og": "node scripts/og-image.mjs",
-    "qa": "node scripts/qa.mjs"
+    "qa": "node scripts/qa.mjs",
+    "build:drive": "vite build --mode drive"
   },
   "devDependencies": {
     "vite": "^8.3.6",

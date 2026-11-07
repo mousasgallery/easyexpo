@@ -1,0 +1,105 @@
+<!-- ====== ΕΣΩΤΕΡΙΚΗ ΤΕΚΜΗΡΙΩΣΗ: μόνο στο αντίγραφο του Google Drive, όχι στη δημόσια σελίδα ====== -->
+<style>
+  .kit { border-top: 3px solid var(--accent); background: var(--bg-deep); padding-block: var(--space-8); }
+  .kit h2 { font-size: var(--fs-h2); }
+  .kit h3 { font-size: var(--fs-h3); margin: var(--space-7) 0 var(--space-4); }
+  .kit p, .kit li { color: var(--text-muted); }
+  .kit-note { margin-top: var(--space-3); padding: var(--space-3) var(--space-4); border: 1.5px dashed var(--accent); border-radius: var(--radius-sm); color: var(--text) !important; width: fit-content; max-width: 100%; }
+  .kit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: var(--space-4); }
+  .sw { border: 1px solid var(--line-strong); border-radius: var(--radius-md); overflow: hidden; background: var(--bg); }
+  .sw-chip { height: 88px; display: flex; align-items: flex-end; padding: var(--space-3); font-weight: 700; font-size: var(--fs-sm); }
+  .sw-body { padding: var(--space-3) var(--space-4) var(--space-4); display: grid; gap: 2px; font-size: var(--fs-sm); }
+  .sw-body strong { color: var(--text); }
+  .sw-body code, .kit code { font-family: var(--font-mono); color: var(--accent); font-size: 0.875em; }
+  .kit-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-md); }
+  .kit table { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); min-width: 520px; }
+  .kit th, .kit td { text-align: left; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); vertical-align: top; }
+  .kit th { color: var(--text); font-weight: 650; background: var(--bg); }
+  .kit td { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .kit ul { list-style: disc; padding-left: 1.25rem; display: grid; gap: var(--space-2); }
+  .kit a { color: var(--accent); }
+  .type-sample { display: grid; gap: var(--space-3); padding: var(--space-5); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--bg); }
+</style>
+<section class="kit" id="tekmiriosi" aria-labelledby="kit-title">
+  <div class="container">
+    <p class="kicker">Εσωτερική τεκμηρίωση</p>
+    <h2 id="kit-title">Οδηγός της σελίδας</h2>
+    <p class="kit-note">Αυτή η ενότητα υπάρχει μόνο στο αντίγραφο του Google Drive. Δεν εμφανίζεται στη δημόσια σελίδα.</p>
+
+    <h3>Στοιχεία έκδοσης</h3>
+    <div class="kit-table-wrap"><table>
+      <tbody>
+        <tr><th>Σελίδα</th><td>rnb.gr · ONE4Business (landing)</td></tr>
+        <tr><th>Έκδοση</th><td>{{version}} · {{date}} · commit {{commit}}</td></tr>
+        <tr><th>Κώδικας</th><td>GitHub <code>mousasgallery/easyexpo</code>, branch <code>{{branch}}</code>, φάκελος <code>rnb-landing/</code></td></tr>
+        <tr><th>Preview</th><td><a href="https://claude.ai/artifact/BUWJ2F31JrjkQ6PQkKkpRD">claude.ai/artifact/BUWJ2F31JrjkQ6PQkKkpRD</a> (ιδιωτικό)</td></tr>
+        <tr><th>Εφαρμογή (κουμπί «Σύνδεση»)</th><td><code>{{appUrl}}</code></td></tr>
+        <tr><th>Δημόσια διεύθυνση</th><td><code>{{siteUrl}}</code></td></tr>
+        <tr><th>Ευρετηρίαση</th><td>{{indexing}}</td></tr>
+        <tr><th>Φιλοξενία</th><td>Cloudflare Pages (αρχική επιλογή) · root <code>rnb-landing</code> · build <code>npm run build</code> · output <code>dist</code></td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Χρωματική παλέτα</h3>
+    <p>«Matrix Code Green», πηγή: <a href="https://www.schemecolor.com/matrix-code-green.php">schemecolor.com/matrix-code-green.php</a>. Δημοσιευμένη παλέτα, όχι επίσημο brand guide τρίτου. Χωρίς αντικατάσταση αποχρώσεων.</p>
+    <div class="kit-grid" style="margin-top: var(--space-4)">
+      <div class="sw"><div class="sw-chip" style="background:#0D0208;color:#F2FFF5;border-bottom:1px solid #008F11">Aa</div><div class="sw-body"><strong>Σχεδόν μαύρο</strong><code>#0D0208</code><span>Βασικό φόντο</span><span><code>--c-near-black</code></span></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#003B00;color:#F2FFF5">Aa</div><div class="sw-body"><strong>Βαθύ πράσινο</strong><code>#003B00</code><span>Σκούρες επιφάνειες, διακοσμητικό βάθος. Όχι για μικρό κείμενο.</span><span><code>--c-deep-green</code></span></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#008F11;color:#000000">Aa</div><div class="sw-body"><strong>Μεσαίο πράσινο</strong><code>#008F11</code><span>Δευτερεύουσες γραμμές, ψηφιακοί χαρακτήρες. Όχι για μικρό κείμενο.</span><span><code>--c-mid-green</code></span></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#00FF41;color:#000000">Aa</div><div class="sw-body"><strong>Φωτεινό πράσινο</strong><code>#00FF41</code><span>Κύρια κουμπιά (πάντα μαύρο κείμενο), ενεργά στοιχεία, focus.</span><span><code>--c-bright-green</code></span></div></div>
+    </div>
+
+    <h3>Ουδέτερα (μόνο για αναγνωσιμότητα)</h3>
+    <div class="kit-grid">
+      <div class="sw"><div class="sw-chip" style="background:#000000;color:#F2FFF5;border-bottom:1px solid #008F11">Aa</div><div class="sw-body"><strong>Μαύρο</strong><code>#000000</code><span>Βαθύτερα φόντα, κείμενο πράσινων κουμπιών</span><span><code>--c-black</code></span></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#F2FFF5;color:#0D0208">Aa</div><div class="sw-body"><strong>Κύριο κείμενο</strong><code>#F2FFF5</code><span>Τίτλοι και κύριο κείμενο</span><span><code>--c-text</code></span></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#B7C9BC;color:#0D0208">Aa</div><div class="sw-body"><strong>Δευτερεύον κείμενο</strong><code>#B7C9BC</code><span>Περιγραφές, βοηθητικό κείμενο</span><span><code>--c-text-muted</code></span></div></div>
+    </div>
+
+    <h3>Ταυτότητα rnb</h3>
+    <div class="kit-grid">
+      <div class="sw"><div class="sw-chip" style="background:#0D0208;color:#F2FFF5;font-size:2rem;letter-spacing:-.05em;gap:4px;align-items:flex-end">rnb<span style="display:inline-flex;gap:3px;padding-bottom:8px"><i style="width:7px;height:7px;border-radius:50%;background:#E63946;display:block"></i><i style="width:7px;height:7px;border-radius:50%;background:#2F7DF6;display:block"></i></span></div><div class="sw-body"><strong>Wordmark + 2 κουκκίδες</strong><span>Κόκκινη <code>#E63946</code> · Μπλε <code>#2F7DF6</code></span><span>Προσωρινές τιμές: δεν υπάρχουν δημοσιευμένα επίσημα HEX. Εκκρεμεί απόφαση.</span></div></div>
+    </div>
+
+    <h3>Αντίθεση πραγματικών συνδυασμών (WCAG)</h3>
+    <div class="kit-table-wrap"><table>
+      <thead><tr><th>Κείμενο</th><th>Φόντο</th><th>Λόγος</th><th>Χρήση</th></tr></thead>
+      <tbody>
+        <tr><td><code>#F2FFF5</code></td><td><code>#0D0208</code></td><td>19,82:1</td><td>Τίτλοι, κύριο κείμενο</td></tr>
+        <tr><td><code>#B7C9BC</code></td><td><code>#0D0208</code></td><td>11,75:1</td><td>Δευτερεύον κείμενο</td></tr>
+        <tr><td><code>#00FF41</code></td><td><code>#0D0208</code></td><td>14,94:1</td><td>Πράσινος τίτλος, ετικέτες, focus</td></tr>
+        <tr><td><code>#000000</code></td><td><code>#00FF41</code></td><td>15,38:1</td><td>Κείμενο κύριων κουμπιών</td></tr>
+        <tr><td><code>#F2FFF5</code></td><td><code>#003B00</code></td><td>12,55:1</td><td>Μηνύματα Trinity</td></tr>
+        <tr><td><code>#B7C9BC</code></td><td><code>#003B00</code></td><td>7,44:1</td><td>Υπότιτλοι σε σκούρα επιφάνεια</td></tr>
+        <tr><td><code>#008F11</code></td><td><code>#000000</code></td><td>4,94:1</td><td>Μόνο διακοσμητικός κώδικας</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Τυπογραφία</h3>
+    <div class="type-sample">
+      <p style="color:var(--text);font-size:var(--fs-h2);font-weight:800;letter-spacing:-.03em;line-height:1.1">Inter · Λιγότερες εκκρεμότητες.</p>
+      <p style="font-size:var(--fs-lg)">Inter, κείμενο: Γράφεις στην Trinity τι χρειάζεσαι.</p>
+      <p><code>Monospace · μόνο διακοσμητικός κώδικας</code></p>
+    </div>
+    <ul style="margin-top: var(--space-4)">
+      <li>Inter με ελληνικά (στη δημόσια σελίδα self-hosted, σε αυτό το αντίγραφο από Google Fonts).</li>
+      <li>Κλίμακα: H1 έως 68px, H2 έως 44px, κείμενο 17px.</li>
+      <li>Λάμψη μόνο από το <code>#00FF41</code> με χαμηλή αδιαφάνεια.</li>
+    </ul>
+
+    <h3>Κείμενο και ακρίβεια</h3>
+    <ul>
+      <li>rnb = εταιρική ταυτότητα · ONE4Business = προϊόν · Trinity = συνομιλήτρια του επιχειρηματία.</li>
+      <li>Τιμή στο FAQ: «50 € τον μήνα για κάθε agent, συν ΦΠΑ» (απόφαση 07/11/2026· «τον μήνα» και «συν ΦΠΑ» προς επιβεβαίωση).</li>
+      <li>Χωρίς πελάτες, αξιολογήσεις, ποσοστά, πιστοποιήσεις, συνδέσεις, αυτόματες αποστολές ή φόρμες.</li>
+      <li>Πρακτικές χρήσεις: «Ενδεικτικό σενάριο». Παράδειγμα: «Ενδεικτικό παράδειγμα — δεν εκτελεί πραγματικές εργασίες».</li>
+      <li>Η λέξη «Matrix» δεν μπαίνει στο ορατό κείμενο. Πρωτότυπα γραφικά, ψηφιακή βροχή με ελληνικά γράμματα.</li>
+    </ul>
+
+    <h3>Έλεγχοι</h3>
+    <ul>
+      <li>79/79 αυτόματοι έλεγχοι (360, 390, 768, 1440 px, μενού, σύνδεσμοι, πληκτρολόγιο, αντίθεση, reduced motion, απόδοση κινητού).</li>
+      <li>Δεν δοκιμάστηκαν: πραγματικά κινητά, Safari, Firefox, αναγνώστες οθόνης, social preview σε Facebook/Viber.</li>
+    </ul>
+  </div>
+</section>
