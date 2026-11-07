@@ -57,6 +57,14 @@ npm run build:single # ένα αυτόνομο HTML (dist-single/) για ιδι
 npm run build && npx wrangler pages deploy dist
 ```
 
+## Αντίγραφο στο Google Drive (κανόνας)
+
+Κάθε landing page αποθηκεύεται στο Google Drive ως **ένα αυτόνομο HTML**, μαζί με ενότητα εσωτερικής τεκμηρίωσης στο τέλος (παλέτα με HEX και χρήση, ουδέτερα, ταυτότητα rnb, αντίθεση, τυπογραφία, ρυθμίσεις, έκδοση, αποφάσεις κειμένου, έλεγχοι). Η τεκμηρίωση **δεν** μπαίνει στη δημόσια σελίδα.
+
+- Φάκελος Drive: `rnb.gr › Landing Pages (HTML)`: https://drive.google.com/drive/folders/13oZ2hkUiwxZewmpxfjbXML73l1dTyAHK
+- Όνομα αρχείου: `rnb-<προϊόν>-landing_v<έκδοση>_<ΕΕΕΕ-ΜΜ-ΗΗ>.html`. Κάθε νέα έκδοση ανεβαίνει ως νέο αρχείο, τα παλιά δεν σβήνονται.
+- Παραγωγή: `npm run build:drive` → `dist-drive/index.html`. Το περιεχόμενο της τεκμηρίωσης βρίσκεται στο `drive/docs-section.html`.
+
 ## Δομή
 
 ```
