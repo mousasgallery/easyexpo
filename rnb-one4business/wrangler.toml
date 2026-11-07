@@ -1,0 +1,4 @@
+# Cloudflare Pages · δημόσιο site RNB ONE4Business (χωριστό από το rnb-alpha). Δεν έχει γίνει deploy.
+name = "rnb-one4business"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"

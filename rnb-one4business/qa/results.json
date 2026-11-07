@@ -1,0 +1,656 @@
+[
+  {
+    "area": "Mobile/Viewports",
+    "name": "360×780: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "360×780: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "360×780: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "390×844: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "390×844: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "390×844: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "430×932: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "430×932: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "430×932: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "768×1024: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "768×1024: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "768×1024: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "1280×800: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "1280×800: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "1280×800: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "1440×900: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "1440×900: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "1440×900: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "390×600 μικρό ύψος: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "390×600 μικρό ύψος: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "390×600 μικρό ύψος: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "844×390 landscape: χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "844×390 landscape: controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "844×390 landscape: H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "640×450 zoom 200% (1280×900): χωρίς οριζόντια υπερχείλιση",
+    "status": "PASS",
+    "evidence": "scrollWidth−vw=0"
+  },
+  {
+    "area": "Mobile/Viewports",
+    "name": "640×450 zoom 200% (1280×900): controls ολόκληρα, στόχοι ≥ 40px",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Οπτικό",
+    "name": "640×450 zoom 200% (1280×900): H1 και κύριο CTA ορατά στην πρώτη οθόνη",
+    "status": "PASS",
+    "evidence": "H1=true CTA=true"
+  },
+  {
+    "area": "Εύρος",
+    "name": "Ένα route / με τις πέντε ενότητες (#arxi #lyseis #demo #erotiseis #epideixi)",
+    "status": "PASS",
+    "evidence": "true,true,true,true,true"
+  },
+  {
+    "area": "Εύρος",
+    "name": "Κανένας σύνδεσμος προς άλλα routes (μόνο anchors και APP_URL)",
+    "status": "PASS",
+    "evidence": "22 links"
+  },
+  {
+    "area": "SEO",
+    "name": "Title του brief",
+    "status": "PASS",
+    "evidence": "RNB | ONE4Business — AI για μικρές επιχειρήσεις"
+  },
+  {
+    "area": "SEO",
+    "name": "Meta description του brief",
+    "status": "PASS",
+    "evidence": "Γνώρισε το ONE4Business του RNB. Δες ενδεικτικές ροές για em…"
+  },
+  {
+    "area": "SEO",
+    "name": "Ένα H1, lang=\"el\", ιεραρχία χωρίς άλματα",
+    "status": "PASS",
+    "evidence": "123333222"
+  },
+  {
+    "area": "SEO",
+    "name": "noindex στο preview",
+    "status": "PASS",
+    "evidence": "noindex, nofollow, noarchive"
+  },
+  {
+    "area": "SEO",
+    "name": "Χωρίς canonical/απόλυτα social URLs χωρίς επιβεβαιωμένο host",
+    "status": "PASS",
+    "evidence": "canonical=false og:image=/og-image.png"
+  },
+  {
+    "area": "SEO",
+    "name": "robots.txt Disallow /",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "SEO",
+    "name": "Social preview 1200×630 σερβίρεται",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Login",
+    "name": "Όλα τα «Σύνδεση» δείχνουν στο APP_URL του config",
+    "status": "PASS",
+    "evidence": "https://rnb-alpha.lovable.app/login"
+  },
+  {
+    "area": "Claims",
+    "name": "Χωρίς τιμές, ποσοστά, πιστοποιήσεις, ονόματα συνδέσεων ή «Matrix»",
+    "status": "PASS",
+    "evidence": "κανένα εύρημα"
+  },
+  {
+    "area": "Claims",
+    "name": "Ένδειξη «Ενδεικτικό σενάριο» στο demo και στη σκηνή",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Claims",
+    "name": "Διευκρίνιση διαθεσιμότητας στο #lyseis",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Claims",
+    "name": "Badges από τον κατάλογο claims (ίδια πηγή)",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Story",
+    "name": "Αλληλουχία σκηνών εμπρός/πίσω με native scroll",
+    "status": "PASS",
+    "evidence": "0:1 0.1:1 0.33: 0.6:3 0.9:4 1:4 0.6:3 0.33: 0:1"
+  },
+  {
+    "area": "Story",
+    "name": "Στη μεταβατική σκηνή 02 κανένα κρυφό link δεν δέχεται εστίαση (inert)",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Story",
+    "name": "Τερματικό: πληκτρολόγηση ανάλογα με το scroll",
+    "status": "PASS",
+    "evidence": "none|none|7ch|0ch|0ch"
+  },
+  {
+    "area": "Story",
+    "name": "«Παράλειψη κίνησης» οδηγεί στο #lyseis",
+    "status": "PASS",
+    "evidence": "top=130"
+  },
+  {
+    "area": "Story",
+    "name": "Παύση rendering όταν η σκηνή είναι εκτός οθόνης",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Higgsfield",
+    "name": "Λειτουργία σκηνής",
+    "status": "PASS",
+    "evidence": "procedural-fallback"
+  },
+  {
+    "area": "Assets",
+    "name": "desktop: ζητείται μόνο η αλληλουχία desktop",
+    "status": "PASS",
+    "evidence": "mode=sequence-desktop requests=29 kinds=desktop"
+  },
+  {
+    "area": "Assets",
+    "name": "desktop: όριο ταυτόχρονων/συνολικών λήψεων (όχι όλη η αλληλουχία μαζί)",
+    "status": "PASS",
+    "evidence": "29 αιτήματα για 36 frames"
+  },
+  {
+    "area": "Assets",
+    "name": "mobile: ζητείται μόνο η αλληλουχία mobile",
+    "status": "PASS",
+    "evidence": "mode=sequence-mobile requests=29 kinds=mobile"
+  },
+  {
+    "area": "Assets",
+    "name": "mobile: όριο ταυτόχρονων/συνολικών λήψεων (όχι όλη η αλληλουχία μαζί)",
+    "status": "PASS",
+    "evidence": "29 αιτήματα για 36 frames"
+  },
+  {
+    "area": "Assets",
+    "name": "Αποτυχία manifest → στατικό/procedural fallback χωρίς σπάσιμο",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Reduced motion: στατική σύνθεση, χωρίς pinned travel, όλα τα κεφάλαια ορατά",
+    "status": "PASS",
+    "evidence": "{\"cls\":true,\"h\":1449,\"running\":false,\"chapters\":3}"
+  },
+  {
+    "area": "Assets",
+    "name": "Reduced motion: καμία λήψη frames",
+    "status": "PASS",
+    "evidence": "0 αιτήματα"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #lyseis: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "evidence": "top=254"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #demo: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "evidence": "top=254"
+  },
+  {
+    "area": "Navigation",
+    "name": "Header → #erotiseis: επικεφαλίδα κάτω από το header",
+    "status": "PASS",
+    "evidence": "top=257"
+  },
+  {
+    "area": "Navigation",
+    "name": "CTA «Ζήτησε επίδειξη» → #epideixi",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Navigation",
+    "name": "Πρώτο Tab: skip link",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Ορατό focus σε κάθε στάση Tab",
+    "status": "PASS",
+    "evidence": "Μετάβαση στο περιεχόμενο → RNB ONE4Business, αρχή σελ → Το προϊόν → Πώς λειτουργεί → Ερωτήσεις → Σύνδεση → Ζήτησε επίδειξη → Ζήτησε επίδειξη → Δες πώς λειτουργεί → Παράλειψη κίνησης ↓ → 1Αίτημα στην TrinityΑίτημα → Επαναφορά"
+  },
+  {
+    "area": "Navigation",
+    "name": "Απευθείας φόρτωση /#demo και refresh",
+    "status": "PASS",
+    "evidence": "top=229 μετά το refresh=229"
+  },
+  {
+    "area": "Navigation",
+    "name": "Απευθείας φόρτωση /#epideixi και refresh",
+    "status": "PASS",
+    "evidence": "top=230 μετά το refresh=230"
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile: άνοιγμα μενού, aria-expanded, εστίαση μέσα",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile: η εστίαση μένει μέσα στο μενού (Tab)",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile: Escape κλείνει και επιστρέφει εστίαση",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile: επιλογή κλείνει το μενού και πάει στην ενότητα",
+    "status": "PASS",
+    "evidence": "top=185"
+  },
+  {
+    "area": "Navigation",
+    "name": "Mobile: header ορατό μετά το τέλος της σκηνής",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Επόμενο → βήμα 2",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Επόμενο → βήμα 3",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Επόμενο → βήμα 4",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Προηγούμενο → βήμα 3",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Άμεση επιλογή βήματος",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Βέλη πληκτρολογίου",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Στοιχεία DEMO-001 / Σε προετοιμασία / χωρίς ημερομηνία",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Προσχέδιο του brief",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Κενό κείμενο δεν εγκρίνεται",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Έγκριση στο demo → «Δεν έγινε αποστολή.»",
+    "status": "PASS",
+    "evidence": "Το προσχέδιο εγκρίθηκε μόνο στην επίδειξη. Δεν έγινε αποστολή."
+  },
+  {
+    "area": "Demo",
+    "name": "Νέα επεξεργασία ακυρώνει την έγκριση",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Demo",
+    "name": "Reset: κείμενο, έγκριση και βήμα επανέρχονται",
+    "status": "PASS",
+    "evidence": "{\"a\":false,\"s\":0}"
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Άδεια πεδία → 3 μηνύματα σφάλματος, εστίαση στο πρώτο",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Μη έγκυρο email απορρίπτεται",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Έγκυρη δοκιμή → «Η δοκιμή ολοκληρώθηκε. Δεν στάλθηκε αίτημα.»",
+    "status": "PASS",
+    "evidence": "Η δοκιμή ολοκληρώθηκε. Δεν στάλθηκε αίτημα."
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Διπλό click → μία μόνο δοκιμή",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Assets/ιδιωτικότητα",
+    "name": "Τα στοιχεία δεν φεύγουν από τον browser (0 requests, 0 localStorage)",
+    "status": "PASS",
+    "evidence": "requests=0"
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Καθαρισμός πεδίων και μηνυμάτων",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Φόρμα",
+    "name": "Ένδειξη δοκιμαστικής φόρμας ορατή πριν από τη συμπλήρωση",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Χωρίς JavaScript: κείμενα και βασικά links διαθέσιμα",
+    "status": "PASS",
+    "evidence": "{\"h1\":\"1\",\"ch\":[\"1\",\"1\",\"1\"],\"faq\":5,\"links\":11}"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Κείμενο hero: #b7c9bc σε #000000",
+    "status": "PASS",
+    "evidence": "12.09:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Κουμπί CTA: #000000 σε #00ff41",
+    "status": "PASS",
+    "evidence": "15.38:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Κουμπί ghost: #f2fff5 σε #000000",
+    "status": "PASS",
+    "evidence": "20.40:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Μενού: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "evidence": "11.75:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Kicker: #00ff41 σε #0d0208",
+    "status": "PASS",
+    "evidence": "14.94:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Badge: #b7c9bc σε #000000",
+    "status": "PASS",
+    "evidence": "12.09:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Σημείωση #lyseis: #f2fff5 σε #003b00",
+    "status": "PASS",
+    "evidence": "12.55:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Μήνυμα Trinity: #f2fff5 σε #003b00",
+    "status": "PASS",
+    "evidence": "12.55:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Μήνυμα ιδιοκτήτη: #000000 σε #00ff41",
+    "status": "PASS",
+    "evidence": "15.38:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Υπότιτλος demo: #b7c9bc σε #003b00",
+    "status": "PASS",
+    "evidence": "7.44:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση FAQ: #f2fff5 σε #0d0208",
+    "status": "PASS",
+    "evidence": "19.82:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Label φόρμας: #f2fff5 σε #0d0208",
+    "status": "PASS",
+    "evidence": "19.82:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Τερματικό (κύριο): #00ff41 σε #000000",
+    "status": "PASS",
+    "evidence": "15.38:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Τερματικό (αριθμοί): #008f11 σε #000000",
+    "status": "PASS",
+    "evidence": "4.94:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Προσβασιμότητα",
+    "name": "Αντίθεση Footer: #b7c9bc σε #0d0208",
+    "status": "PASS",
+    "evidence": "11.75:1 (ελάχ. 4.5)"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "Αρχικό JavaScript ≤ 200 KB gzip",
+    "status": "PASS",
+    "evidence": "JS 7.4 KB gzip · CSS 5.9 KB · HTML 7.5 KB · γραμματοσειρές 90 KB"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "Hero poster / αλληλουχία frames (όρια 200/350 KB, 4/8 MB)",
+    "status": "BLOCKED",
+    "evidence": "Δεν υπάρχουν assets Higgsfield· η σκηνή είναι procedural (0 KB εικόνων)"
+  },
+  {
+    "area": "Απόδοση",
+    "name": "Κύλιση σκηνής σε Pixel 7 (emulation), CPU ×4: p95 καρέ < 50 ms",
+    "status": "PASS",
+    "evidence": "p50=16.7 ms · p95=33.3 ms · long tasks=0 · FCP=128 ms · DCL=99 ms (localhost, χωρίς throttling δικτύου)"
+  },
+  {
+    "area": "Γενικά",
+    "name": "Χωρίς σφάλματα κονσόλας",
+    "status": "PASS",
+    "evidence": ""
+  },
+  {
+    "area": "Navigation",
+    "name": "Cloudflare Pages (wrangler pages dev): / 200, άγνωστα paths πραγματικό 404",
+    "status": "PASS",
+    "evidence": "{\"root\":200,\"unknown\":404,\"old\":404}"
+  },
+  {
+    "area": "SEO",
+    "name": "Cloudflare Pages: header X-Robots-Tag noindex",
+    "status": "PASS",
+    "evidence": "noindex, nofollow, noarchive"
+  },
+  {
+    "area": "Mobile",
+    "name": "Φυσικές συσκευές (iPhone/Android)",
+    "status": "NOT RUN",
+    "evidence": "Μόνο Chromium emulation σε αυτό το περιβάλλον"
+  }
+]

@@ -1,0 +1,50 @@
+/*
+ * Design tokens · RNB ONE4Business (brief v1.2 §4)
+ * Καταγεγραμμένη σχεδιαστική παλέτα του έργου, όχι πιστοποιημένο brand guide της ταινίας.
+ * Χωρίς αντικατάσταση αποχρώσεων. Νέα χρώματα μόνο εδώ, με αιτιολόγηση.
+ */
+:root {
+  color-scheme: dark;
+  --c-bg: #0D0208;          /* Κύριο φόντο */
+  --c-stage: #000000;       /* Βαθύ φόντο / σκηνή */
+  --c-surface: #003B00;     /* Σκούρες πράσινες επιφάνειες (όχι για μικρό κείμενο ως χρώμα κειμένου) */
+  --c-green-2: #008F11;     /* Δευτερεύουσα πράσινη λεπτομέρεια (γραμμές, αριθμοί τερματικού) */
+  --c-accent: #00FF41;      /* Κύρια έμφαση / CTA (πάντα μαύρο κείμενο πάνω του) */
+  --c-text: #F2FFF5;        /* Κύριο κείμενο */
+  --c-text-2: #B7C9BC;      /* Δευτερεύον κείμενο */
+
+  /* Επίσημο logo RNB (rnb.gr › 10_Brand › rnb_logo_dark.svg): χρώματα του master, μόνο μέσα στο logo */
+  --logo-ink: #ECECEC;
+  --logo-red: #C8423B;
+  --logo-blue: #2F5BD3;
+
+  --on-accent: var(--c-stage);
+  --line: var(--c-surface);
+  --line-2: var(--c-green-2);
+  --glow-sm: 0 0 14px rgb(0 255 65 / 0.28);
+  --glow-md: 0 0 34px rgb(0 255 65 / 0.18);
+  --phosphor: 0 0 6px rgb(0 255 65 / 0.55), 0 0 18px rgb(0 255 65 / 0.22);
+
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);   /* 16–18 mobile, ~18 desktop */
+  --fs-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --fs-h3: clamp(1.1875rem, 1.1rem + 0.4vw, 1.375rem);
+  --fs-h2: clamp(1.75rem, 1.25rem + 2vw, 2.875rem);
+  --fs-h1: clamp(2.125rem, 1.25rem + 4vw, 4.5rem);
+  --fs-story: clamp(1.625rem, 1.15rem + 2.2vw, 3rem);
+
+  --s1: .25rem; --s2: .5rem; --s3: .75rem; --s4: 1rem; --s5: 1.5rem; --s6: 2rem; --s7: 3rem;
+  --s8: clamp(4rem, 3rem + 4vw, 7.5rem);
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px;
+  --container: 1200px;
+  --measure: 68ch;
+  --gutter: max(16px, env(safe-area-inset-left, 0px), clamp(1rem, .6rem + 2vw, 2rem));
+  --header-h: 64px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --t-fast: 180ms;
+  --t-med: 260ms;
+}

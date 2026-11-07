@@ -1,0 +1,74 @@
+<!-- ====== ΕΣΩΤΕΡΙΚΗ ΤΕΚΜΗΡΙΩΣΗ: μόνο στο αντίγραφο του Google Drive ====== -->
+<style>
+  .kit { border-top: 3px solid var(--c-accent); background: var(--c-stage); padding-block: var(--s8); }
+  .kit h2 { font-size: var(--fs-h2); } .kit h3 { font-size: var(--fs-h3); margin: var(--s7) 0 var(--s4); }
+  .kit p, .kit li, .kit td { color: var(--c-text-2); } .kit a { color: var(--c-accent); }
+  .kit code { font-family: var(--font-mono); color: var(--c-accent); font-size: .875em; }
+  .kit ul { list-style: disc; padding-left: 1.25rem; display: grid; gap: .4rem; }
+  .kit-note { margin-top: var(--s3); padding: .7rem 1rem; border: 1.5px dashed var(--c-accent); border-radius: var(--r-sm); color: var(--c-text) !important; width: fit-content; max-width: 100%; }
+  .sw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: var(--s4); }
+  .sw { border: 1px solid var(--line-2); border-radius: var(--r-md); overflow: hidden; background: var(--c-bg); }
+  .sw-chip { height: 80px; display: flex; align-items: flex-end; padding: .7rem; font-weight: 700; }
+  .sw-body { padding: .7rem 1rem 1rem; display: grid; gap: 2px; font-size: .9375rem; } .sw-body strong { color: var(--c-text); }
+  .kt-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-md); }
+  .kit table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+  .kit th, .kit td { text-align: left; padding: .7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+  .kit th { color: var(--c-text); background: var(--c-bg); font-weight: 650; }
+</style>
+<section class="kit" id="tekmiriosi" aria-labelledby="kit-title">
+  <div class="container">
+    <p class="kicker">Εσωτερική τεκμηρίωση</p>
+    <h2 id="kit-title">Οδηγός της σελίδας</h2>
+    <p class="kit-note">Αυτή η ενότητα υπάρχει μόνο στο αντίγραφο του Google Drive. Η κινηματογραφική σκηνή εδώ είναι το procedural fallback.</p>
+
+    <h3>Έκδοση</h3>
+    <div class="kt-wrap"><table><tbody>
+      <tr><th>Σελίδα</th><td>RNB · ONE4Business, μία landing στο <code>/</code> (brief v1.2)</td></tr>
+      <tr><th>Έκδοση</th><td>{{version}} · {{date}} · commit {{commit}}</td></tr>
+      <tr><th>Κώδικας</th><td>GitHub <code>mousasgallery/easyexpo</code>, branch <code>{{branch}}</code>, φάκελος <code>rnb-one4business/</code></td></tr>
+      <tr><th>Σύνδεση (APP_URL)</th><td><code>{{appUrl}}</code> → 302 → <code>https://rnb.gr/login</code> (επαληθεύτηκε 07/11/2026)</td></tr>
+      <tr><th>Λειτουργία</th><td>preview · noindex · CONTACT_MODE=demo · χωρίς analytics</td></tr>
+      <tr><th>Higgsfield</th><td>Σύνδεση και κατάλογος OK (2.925,5 credits). Παραγωγή: BLOCKED (δεν εκτίθεται εργαλείο παραγωγής). Job IDs: κανένα</td></tr>
+      <tr><th>Φιλοξενία</th><td>Cloudflare Pages (πρόταση) · root <code>rnb-one4business</code> · build <code>npm run build</code> · output <code>dist</code></td></tr>
+    </tbody></table></div>
+
+    <h3>Χρωματική παλέτα (καταγεγραμμένη, brief §4)</h3>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw-chip" style="background:#0D0208;color:#F2FFF5;border-bottom:1px solid #008F11">Aa</div><div class="sw-body"><strong>Κύριο φόντο</strong><code>#0D0208</code></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#000000;color:#F2FFF5;border-bottom:1px solid #008F11">Aa</div><div class="sw-body"><strong>Βαθύ φόντο / σκηνή</strong><code>#000000</code></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#003B00;color:#F2FFF5">Aa</div><div class="sw-body"><strong>Σκούρες πράσινες επιφάνειες</strong><code>#003B00</code></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#008F11;color:#000000">Aa</div><div class="sw-body"><strong>Δευτερεύουσα πράσινη λεπτομέρεια</strong><code>#008F11</code></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#00FF41;color:#000000">Aa</div><div class="sw-body"><strong>Κύρια έμφαση / CTA</strong><code>#00FF41</code> · μαύρο κείμενο</div></div>
+      <div class="sw"><div class="sw-chip" style="background:#F2FFF5;color:#0D0208">Aa</div><div class="sw-body"><strong>Κύριο κείμενο</strong><code>#F2FFF5</code></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#B7C9BC;color:#0D0208">Aa</div><div class="sw-body"><strong>Δευτερεύον κείμενο</strong><code>#B7C9BC</code></div></div>
+    </div>
+    <h3>Επίσημο logo RNB</h3>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw-chip" style="background:#0D0208"><span class="brand-logo" style="display:block">{{logo}}</span></div><div class="sw-body"><strong>rnb_logo_dark.svg</strong><span>Από <code>rnb.gr › 10_Brand</code></span><span><code>#ECECEC</code> · <code>#C8423B</code> · <code>#2F5BD3</code></span></div></div>
+    </div>
+
+    <h3>Αντίθεση (μετρημένη στην αποδομένη σελίδα)</h3>
+    <div class="kt-wrap"><table><thead><tr><th>Συνδυασμός</th><th>Λόγος</th></tr></thead><tbody>
+      <tr><td><code>#000000</code> σε <code>#00FF41</code> (CTA)</td><td>15,38:1</td></tr>
+      <tr><td><code>#F2FFF5</code> σε <code>#0D0208</code></td><td>19,82:1</td></tr>
+      <tr><td><code>#B7C9BC</code> σε <code>#0D0208</code></td><td>11,75:1</td></tr>
+      <tr><td><code>#00FF41</code> σε <code>#000000</code> (τερματικό)</td><td>15,38:1</td></tr>
+      <tr><td><code>#008F11</code> σε <code>#000000</code> (αριθμοί τερματικού)</td><td>4,94:1</td></tr>
+      <tr><td><code>#F2FFF5</code> σε <code>#003B00</code></td><td>12,55:1</td></tr>
+    </tbody></table></div>
+
+    <h3>Τυπογραφία</h3>
+    <ul><li>Inter (variable, ελληνικά, self-hosted, OFL) για όλο το κείμενο. Σώμα 16–18 px.</li><li>JetBrains Mono (ελληνικά, OFL) μόνο στο τερματικό και σε σύντομες ενδείξεις.</li><li>Σε αυτό το αντίγραφο οι γραμματοσειρές φορτώνουν από Google Fonts.</li></ul>
+
+    <h3>Έλεγχοι</h3>
+    <ul><li>107 PASS · 0 FAIL · 1 BLOCKED (assets Higgsfield) · 1 NOT RUN (φυσικές συσκευές).</li><li>Viewports 360, 390, 430, 768, 1280, 1440, μικρό ύψος, landscape, zoom 200%.</li><li>Demo, φόρμα (0 requests), μενού, anchors, refresh, reduced motion, χωρίς JS, αντίθεση, απόδοση, 404 σε Cloudflare Pages (τοπικά).</li></ul>
+
+    <h3>Εκκρεμότητες πριν από δημόσια διάθεση</h3>
+    <ul>
+      <li>Παραγωγή assets Higgsfield (σύνδεση με εργαλεία παραγωγής και όριο credits).</li>
+      <li>Domain: το rnb.gr σερβίρει σήμερα την εφαρμογή· το app.rnb.gr δεν απαντά.</li>
+      <li>Εταιρικά στοιχεία, ενημέρωση απορρήτου/όρων, προορισμός επικοινωνίας της φόρμας.</li>
+      <li>Επιβεβαίωση του logo ως τελικού και των δικαιωμάτων των assets.</li>
+    </ul>
+  </div>
+</section>
