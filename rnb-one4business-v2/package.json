@@ -1,0 +1,27 @@
+{
+  "name": "rnb-one4business-v2",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "ONE4Business από τη RNB — κινηματογραφική landing με αφηγητή τον NEO (RNB-004 / RNB-010). Ανεξάρτητο από rnb-alpha και από τις προηγούμενες landing.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview --port 4175 --strictPort",
+    "media": "node scripts/media.mjs",
+    "og": "node scripts/og-image.mjs",
+    "qa": "node scripts/qa.mjs",
+    "record": "node scripts/record-typing.mjs",
+    "package": "node scripts/package.mjs",
+    "build:drive": "vite build --mode drive"
+  },
+  "devDependencies": {
+    "vite": "^8.3.6",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0"
+  }
+}
